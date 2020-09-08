@@ -1,0 +1,77 @@
+.header {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .list {
+    display: flex;
+    width: 450px;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .list-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+  }
+  
+  .newItemInput {
+    padding: 10px;
+    width: 150px;
+  }
+
+  .submitButton {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 2px;
+    width: 77px;
+    height: 39px;
+    margin-top: 10px;
+  }
+  
+  .row-left {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    padding-left: 10px;
+    border: 2px solid black;
+    background-color: lightskyblue;
+    border-radius: 40px;
+    width: 400px;
+    color: black;
+}
+  
+  .checkbox {
+    zoom: 2
+  }
+  
+  body {
+    background-color: lightgray;
+    font-family: Lobster;
+  }
+
+  .signOutButton { 
+        background-color: #f0c14b;
+        border: 1px solid;
+        border-color: #a88734 #9c7e31 #846a29;
+        border-radius: 2px;
+        width: 177px;
+        height: 30px;
+        margin-top: 10px;
+
+  }
+
+  .priorityDiv {
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;      
+  }
