@@ -30,26 +30,28 @@ export default function Login() {
   }
 
   if(loggedIn) return (
-    <div><center><u><h1 className="title">{name}'s To-do list</h1></u>
+    <div><center><h1 className="title">{name}'s To-do list</h1>
     <TodoList /> 
-    <button className="signOutButton" onClick={signOut}>Sign out</button></center></div>)
+    <button className="signOutButton" onClick={signOut}>SIGN OUT</button></center></div>)
 
 return (
 <div className="login">
-    <h3>Your name:</h3>
-    <input type="text" onChange={event => setName(event.target.value)} value={name} />
-    <h3>Email:</h3>
-    <input type="email" onChange={event => setEmail(event.target.value)} value={email} />
-    <h3>Password:</h3>
-    <input type="password" onChange={event => setPassword(event.target.value)} value={password}/>
-    <div className="buttons"><button className="button" onClick={login}>Sign-in</button>
+
+
+        <input type="text" placeholder="Your name" onChange={event => setName(event.target.value)} value={name} />
+        <input type="email" placeholder="Email address" onChange={event => setEmail(event.target.value)} value={email} />
+        <input type="password" placeholder="Password" onChange={event => setPassword(event.target.value)} value={password}/>
+ 
+    <button className="button" onClick={login}>Sign-in</button>
     <button className="button" onClick={register}>Create new account</button>
-    <div><h4>Default log in details:</h4>
+   <div className="default-details">
+    <h4><u>User details for recruiters and potential employers</u></h4>
     <h4>Name: Test</h4>
     <h4>Email: Test@test.com </h4>
     <h4>Password: 123456</h4>
     </div>
-</div>
-</div>
+ </div>
+
+
 )
 }
